@@ -1,0 +1,3 @@
+# Module wiekenjij
+# RPC service class, partial path of RPC policy file
+com.almende.wiekenjij.client.PersonService, E07BF834426C2CBDF82E717238AB074C.gwt.rpc

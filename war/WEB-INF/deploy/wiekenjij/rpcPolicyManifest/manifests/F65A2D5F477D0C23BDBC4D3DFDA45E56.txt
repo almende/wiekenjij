@@ -1,0 +1,2 @@
+serviceClass: com.almende.wiekenjij.client.PersonService
+path: E07BF834426C2CBDF82E717238AB074C.gwt.rpc

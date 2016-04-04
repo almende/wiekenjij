@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app
+    PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+    "http://java.sun.com/dtd/web-app_2_3.dtd">
+
+<web-app>
+  <!-- Set up the servlets such that only admins have access -->
+  <!-- Someone is admin when he is a developer on the GAE project -->
+  <!-- http://code.google.com/appengine/docs/java/config/webxml.html#Security_and_Authentication -->
+  <security-constraint>
+  
+<!-- 
+      <web-resource-collection>
+          <url-pattern>/</url-pattern>
+      </web-resource-collection>
+      <auth-constraint>
+          <role-name>admin</role-name>
+      </auth-constraint>
+ -->      
+      <!-- enforce HTTPS -->
+      <user-data-constraint>
+          <transport-guarantee>CONFIDENTIAL</transport-guarantee>
+      </user-data-constraint>
+      
+  </security-constraint>
+  
+  <!-- Servlets -->
+  <servlet>
+    <servlet-name>personServlet</servlet-name>
+    <servlet-class>com.almende.wiekenjij.server.PersonServiceImpl</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>personServlet</servlet-name>
+    <url-pattern>/wiekenjij/person</url-pattern>
+  </servlet-mapping>
+  
+  <!-- Default page to serve -->
+  <welcome-file-list>
+    <welcome-file>WieKenJij.html</welcome-file>
+  </welcome-file-list>
+
+</web-app>

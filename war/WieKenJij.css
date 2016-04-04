@@ -1,0 +1,104 @@
+/** Add css rules here for your application. */
+
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	font-size: 11pt;
+	font-family: Arial Unicode MS, Arial, Verdana;
+	color: #4D4D4D; 
+}
+
+input[type="text"] {
+	border-width: 1px;
+	border-color: lightgray;
+}
+
+button, select, input {
+	font-size: 11pt;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.header {
+	background-color: #FFD510;	
+	background: url('img/rainbow_header.jpg');
+	background-size: 100%;
+	background-repeat: no-repeat;	
+	font-family: times;
+	font-weight: bold;
+	color: white;
+	text-align: center;
+	padding: 10px;
+}
+
+.vertical {
+	width: 100%;
+}
+
+.menu {
+	padding: 20px 20px 40px 40px;
+}
+
+.listitem {
+	padding: 10px 0px;
+	display: block;
+}
+
+.content {
+  padding: 20px 20px 40px 20px;
+	min-height: 450px;
+}
+
+div.footer {
+	border-top: 2px solid #E5E5E5;
+}
+
+.logo {
+	height:35px;	
+}
+
+h1 {
+  font-size: 26pt;
+  font-weight: bold;
+  font-style: italic;
+  margin: 10px;
+  margin-top: 0px;
+}
+
+.auth {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	color: white;
+}
+
+.gwt-SuggestBox { 
+	/* the suggest box itself */
+
+}
+.gwt-SuggestBoxPopup { 
+  /* the suggestion popup */
+  background-color: white;
+  padding: 5px;
+  border: 1px solid gray;
+  border-radius: 3px;   
+  color: black;
+ }
+.gwt-SuggestBoxPopup .item { 
+	/* an unselected suggestion */
+	background-color: white;
+	padding: 5px 10px;
+}
+.gwt-SuggestBoxPopup .item-selected { 
+  /* a selected suggestion */
+  background-color: #D5E2FF;
+  padding: 5px 10px;
+}
+
+td.footer {
+	padding: 10px;
+  text-align: center;	
+}
+
